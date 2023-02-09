@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>ex4.html</h2>
+	<h3 th:text="${result}"></h3>
+
+	<table>
+		<tr>
+			<th>번호</th>
+			<th>성</th>
+			<th>이름</th>
+			<th>등록시간</th>
+		</tr>
+		<tr>
+			<td th:text="${dto.sno}"></td>
+			<td th:text="${dto.first}"></td>
+			<td th:text="${dto.last}"></td>
+			<td th:text="${dto.regtime}"></td>
+		</tr>
+	</table>
+</body>
+</html>
